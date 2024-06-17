@@ -1,11 +1,14 @@
 function firstChar(text) {
   // your code here
-	
-	return text.charAt(0);
-
+	let result=text.trim();
+	if (result.length>0) {
+		return result.charAt(0);
+	}
+	return ' ';
 }
 
 // Do not change the code below
 
 const text = prompt("Enter text:");
 alert(firstChar(text));
+
